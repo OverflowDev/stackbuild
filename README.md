@@ -18,10 +18,12 @@ To get started with this project, follow these steps:
    ```bash
    git clone https://github.com/OverflowDev/stackbuild.git
 
-1. Install all the depencies
+2. Install all the depencies
 
    ```bash
    npm install
+
+3. Ensure to add **VITE_API_URI** and **VITE_APP_ID** to your .env 
 
 ## Features
 
