@@ -3,6 +3,26 @@
 
 A simple blog CRUD (Create, Read, Update, Delete) application with user authentication, built using React, React Context, and Axios.
 
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js and npm installed on your machine.
+
+## Getting Started
+
+To get started with this project, follow these steps:
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/OverflowDev/stackbuild.git
+
+1. Install all the depencies
+
+   ```bash
+   npm install
+
 ## Features
 
 - Integration with the Dummy API for post data.
