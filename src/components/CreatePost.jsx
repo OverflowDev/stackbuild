@@ -19,7 +19,7 @@ function CreatePost({onClose, visible}) {
     image: '',
     likes: '',
     tags: [],
-    owner: userId.id
+    owner: userId?.id
   })
 
   const handleInputChange = (e) => {

@@ -31,7 +31,7 @@ function EditPost({postId, onClose, visible, post}) {
     image: image,
     likes: likes,
     tags: tags,
-    owner: userId.id
+    owner: userId?.id
   })
   
   const handleInputChange = (e) => {
