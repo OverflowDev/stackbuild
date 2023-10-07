@@ -1,7 +1,7 @@
 import { createContext, useReducer, useContext } from "react"
 
 import AuthReducer from './AuthReducer'
-import axiosPrivate from "../../api/Axios"
+import axiosPrivate from "../api/Axios"
 
 const AuthContext = createContext()
 

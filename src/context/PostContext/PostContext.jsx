@@ -1,7 +1,7 @@
 import { createContext, useReducer, useEffect, useState } from "react";
 
 import PostReducer from './PostReducer'
-import axiosPrivate from "../../../api/Axios"
+import axiosPrivate from "../../api/Axios"
 
 
 const PostContext = createContext()
