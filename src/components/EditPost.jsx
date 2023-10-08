@@ -16,8 +16,6 @@ function EditPost({postId, onClose, visible, post}) {
     tags,
   } = post
 
-  console.log(text)
-
   // useEffect(() => {
   //   fetchPost(postId)
   //   // eslint-disable-next-line react-hooks/exhaustive-deps
