@@ -9,10 +9,13 @@ import CreatePost from "./components/CreatePost"
 import Posts from "./components/Posts"
 
 import Pagination from "./components/Pagination"
+import { useAuth } from "./context/AuthContext"
 
 function App() {
 
   const {posts, loading, searchPosts} = useContext(PostContext)
+  const {user} = useAuth()
+
 
   // Date 
   Moment.locale('en')
@@ -66,15 +69,17 @@ function App() {
             </button>
           </div>
         </div>
-        <button 
-          onClick={(e) => {
-            e.stopPropagation()
-            setCreatePostModal(true)
-          }}
-          className="px-3 py-2 bg-blue-500 rounded-md text-white"
-        >
-          Create Post
-        </button>
+        {user && (
+          <button 
+            onClick={(e) => {
+              e.stopPropagation()
+              setCreatePostModal(true)
+            }}
+            className="px-3 py-2 bg-blue-500 rounded-md text-white"
+          >
+            Create Post
+          </button>
+        )}
       </div>
       <div className="mt-12">
         {currentPosts.length !==0  ? (

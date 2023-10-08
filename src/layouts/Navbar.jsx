@@ -4,6 +4,7 @@ import { useAuth } from "../context/AuthContext"
 function Navbar() {
 
   const {user, logoutUser} = useAuth()
+  
   return (
     <nav className='flex justify-between items-center md:px-24 px-8 py-3 shadow-md w-full'>
       <Link to='/' className='md:text-3xl font-bold text-blue-800'>Stack<span className='text-blue-500'>BUILD</span></Link>
